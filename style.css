@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f7fa;
+}
+
+.card {
+    margin: 5em;
+    width:400px;
+    padding: 50px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.search input {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search button {
+    border: none;
+    outline: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.search button:hover {
+    background: #f0f0f0;
+}
+
+.search button img {
+    width: 20px;
+    height: 20px;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-img {
+    width: 120px;
+    margin: 10px 0;
+}
+
+.city {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.temp {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.weather-details {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.geo-tag{
+    font-weight: 100;
+    font-size: 25px;
+    padding: 20px;
+}
+.col img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.col h1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.col h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+}
