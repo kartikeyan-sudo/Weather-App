@@ -6,9 +6,10 @@ async function geolocation(city) {
     var data = await response.json();
     var lat = data[0].lat;
     var lon = data[0].lon;
-    document.querySelector(".lat").innerHTML = `Latitutde : ${data[0].lat}`;
+    document.querySelector(".lat").innerHTML = `Latitude : ${data[0].lat}`;
       document.querySelector(".lon").innerHTML = `Longitude : ${data[0].lon}`;
     document.querySelector(".geo-tag").innerHTML = `${data[0].lat} , ${data[0].lon}`;
+    
     getWeather(lat, lon);
 }
 
