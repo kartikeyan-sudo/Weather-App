@@ -8,7 +8,6 @@ async function geolocation(city) {
     var lon = data[0].lon;
     document.querySelector(".lat").innerHTML = `Latitude : ${data[0].lat}`;
       document.querySelector(".lon").innerHTML = `Longitude : ${data[0].lon}`;
-    document.querySelector(".geo-tag").innerHTML = `${data[0].lat} , ${data[0].lon}`;
     
     getWeather(lat, lon);
 }
@@ -54,6 +53,7 @@ searchbtn.addEventListener("click", () => {
   
 
 })
+
 
 
 
