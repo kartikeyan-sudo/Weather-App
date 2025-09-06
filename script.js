@@ -8,7 +8,6 @@ async function geolocation(city) {
     var lon = data[0].lon;
     document.querySelector(".lat").innerHTML = `Latitude : ${data[0].lat}`;
       document.querySelector(".lon").innerHTML = `Longitude : ${data[0].lon}`;
-    
     getWeather(lat, lon);
 }
 
@@ -40,8 +39,15 @@ async function getWeather(lat, lon) {
         icon.src = "images/Clouds.png";
     } else if (data.weather[0].main === "Clear") {
         icon.src = "images/clear.png";
+    } else if(data.weather[0].main === "rain"){
+        icon.src = "images/rain.png";
+    } else if(data.weather[0].main === "snow"){
+        icon.src = "images/snow.png";
+    } else if ( data.weather[0].main === "drizzle"){
+        icon.src ="images/drizzle.png";
+    } else {
+        icon.src = "images/mist.png";
     }
-
 }
 
 
@@ -53,7 +59,6 @@ searchbtn.addEventListener("click", () => {
   
 
 })
-
 
 
 
